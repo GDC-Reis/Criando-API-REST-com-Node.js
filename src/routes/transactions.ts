@@ -7,7 +7,7 @@ import { checkSessionIdExists } from '../middlewares/check-session-id-exists'
 export async function transactionsRoutes(app: FastifyInstance) {
   // Contexto
   // Plugin Global
-  app.addHook('preHandler', async (request, reply) => { 
+  app.addHook('preHandler', async (request, reply) => {
     console.log(`[${request.method}] ${request.url}`)
   })
 
